@@ -48,6 +48,10 @@ header {
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid #3a3a3a;
+  background-image: linear-gradient(
+    rgb(160, 48, 252),
+    rgb(0, 238, 159)
+  ); /* DEGRADADO */
 }
 
 .header__logo {
@@ -68,6 +72,17 @@ header {
 
 .nav__link:hover,
 .nav__link:focus {
+  opacity: 0.65;
+}
+
+span {
+  /* TRANSICION */
+  height: auto;
+  transition: height 2s;
+}
+
+span:hover {
+  height: 200px;
   opacity: 0.65;
 }
 
