@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+img {
+  /* Para que imagenes se acomoden y se achiquen si se achica la pantalla */
+  max-width: 100%;
+}
+
+img,
+svg {
+  /* centro de ellas mismas */
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  max-width: 1320px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.header-index {
+  max-width: 1320px;
+}
+
+header {
+  background-color: white;
+  border-bottom: 0, 5px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.header__logo {
+  width: auto;
+}
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 00.7rem;
+}
+
+.nav ul li {
+  display: inline-block;
+
+  margin-left: 2rem;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.65;
+}
+
+.intro-section {
+  grid-template-columns: auto auto;
+  background-color: white;
+  padding: 8rem 0 0 0;
+}
+
+.display-2 {
+  text-transform: capitalize;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.display-2--intro {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.display-2--description {
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.imagenInicio {
+  margin-top: 1rem;
+  padding: 3rem;
+  max-width: 100%;
+  height: 900;
+  vertical-align: center;
+}
+
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  max-width: 1320px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__img {
+  width: 25px;
+  padding: 0, 5rem;
+}
+
+.col {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: grey;
+}
+
+.formulario {
+  background-color: white;
+  color: black;
+  padding: 4rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero_img {
+  width: 200px;
+  margin: 2rem;
+  padding: 0, 5rem;
+}
+
+.estudio__info {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.estudio__renglon {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.trabajos {
+  margin: 2rem;
+  max-width: 300px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  font-family: "Raleway", sans-serif;
+}
+
+.trabajo__titulo {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.trabajo__descripcion {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+/* GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* MEDIA Q Mobile first */
+
+@media (min-widht: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+
+  .nav__list {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .display-2 {
+    font-size: 3rem;
+  }
+
+  .display-2--description {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+
+@media (min-widht: 1024px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+
+  .display-2--description {
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+}
