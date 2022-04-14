@@ -13,87 +13,94 @@
     />
   </head>
   <body>
-    <div class="grid-container">
-      <header class="header">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
-          <a href="index.html"
+          <a href="../index.html"
             ><img
               class="header__logo"
-              src="../Img/Logo2.svg"
+              src="../Img/logo2.svg"
               alt="Logoprincipal"
             />
           </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="../index.html">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="Trabajos.html">Trabajos</a>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Trabajos.html"
+                  >Trabajos</a
+                >
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="Estudio.html">Estudio</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Estudio.html">Estudio</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="Publicaciones.html">Publicaciones</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Publicaciones.html">Publicaciones</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="Contacto.html">Contacto</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </header>
-
-      <main class="main">
-        <h3 class="hero">
-          <img class="hero_img" src="../Img/Archi-1.png" alt="Revista" />
-          <img
-            class="hero_img"
-            src="../Img/Best-architectes.png"
-            alt="best architectes"
-          />
-          <img
-            class="hero_img"
-            src="../Img/schweizer-ingenieurbaukunst-2019-2020.jpg"
-            alt="Revista"
-          />
-          <img
-            class="hero_img"
-            src="../Img/Casa-Rizza_badges_14-copia.png"
-            alt="Casa Rizza"
-          />
-          <img class="hero_img" src="../Img/Revista-au.png" alt="Revista" />
-        </h3>
-      </main>
-
-      <footer class="footer">
-        <div class="footer__container">
-          <div>
-            <a href=""
-              ><img
-                class="footer__img"
-                src="../Img/facebook (1).png"
-                alt="Facebook"
-            /></a>
-            <a href=""
-              ><img
-                class="footer__img"
-                src="../Img/linkedin.png"
-                alt="LinkedIn"
-            /></a>
-            <a href=""
-              ><img
-                class="footer__img"
-                src="../Img/instagram.png"
-                alt="Instagram"
-            /></a>
           </div>
-          <p class="col">
-            ©2022 Estudio Nicolas Sironi. Todos los derechos reservados.
-          </p>
         </div>
-      </footer>
-    </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h3 class="hero">
+        <img class="hero_img" src="../Img/Archi-1.png" alt="Revista" />
+        <img
+          class="hero_img"
+          src="../Img/Best-architectes.png"
+          alt="best architectes"
+        />
+        <img
+          class="hero_img"
+          src="../Img/schweizer-ingenieurbaukunst-2019-2020.jpg"
+          alt="Revista"
+        />
+        <img
+          class="hero_img"
+          src="../Img/Casa-Rizza_badges_14-copia.png"
+          alt="Casa Rizza"
+        />
+        <img class="hero_img" src="../Img/Revista-au.png" alt="Revista" />
+      </h3>
+    </main>
+
+    <footer>
+      <div class="container-fluid bg-light text-center p-3">
+        <div>
+          <a href=""
+            ><img
+              class="footer__img"
+              src="../Img/facebook (1).png"
+              alt="Facebook"
+          /></a>
+          <a href=""
+            ><img class="footer__img" src="../Img/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href=""
+            ><img
+              class="footer__img"
+              src="../Img/instagram.png"
+              alt="Instagram"
+          /></a>
+        </div>
+        <p class="col">
+          ©2022 Estudio Nicolas Sironi. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -26,7 +26,7 @@ ul {
   list-style: none;
 }
 
-.container {
+/* .container {
   width: 80%;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -34,7 +34,7 @@ ul {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
-}
+} */
 
 .header-index {
   max-width: 1320px;
@@ -48,20 +48,18 @@ header {
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid #3a3a3a;
-  background-image: linear-gradient(
-    rgb(160, 48, 252),
-    rgb(0, 238, 159)
-  ); /* DEGRADADO */
 }
 
 .header__logo {
   width: auto;
 }
-.nav__link {
+.nav-link {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  font-size: 00.7rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
 }
 
 .nav ul li {
@@ -70,8 +68,8 @@ header {
   margin-left: 2rem;
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav-link:hover,
+.nav-link:focus {
   opacity: 0.65;
 }
 
@@ -179,7 +177,7 @@ span:hover {
   justify-content: center;
 }
 
-.trabajos {
+/* .trabajos {
   margin: 2rem;
   max-width: 300px;
   padding: 2rem;
@@ -198,83 +196,4 @@ span:hover {
   font-weight: 400;
   color: #3a3a3a;
 }
-
-/* GRID */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
-.header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: repeat (2, 1fr);
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-/* MEDIA Q Mobile first */
-
-@media (min-widht: 768px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-  }
-
-  .nav {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: auto;
-    position: relative;
-  }
-
-  .nav__list {
-    margin: 0 0 0 1.5rem;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .display-2 {
-    font-size: 3rem;
-  }
-
-  .display-2--description {
-    font-size: 1rem;
-    display: inline-block;
-  }
-}
-
-@media (min-widht: 1024px) {
-  .display-2 {
-    font-size: 4.5rem;
-  }
-
-  .display-2--description {
-    font-size: 1.4rem;
-    display: inline-block;
-  }
-}
+ */
