@@ -154,6 +154,7 @@ span:hover {
   width: 200px;
   margin: 2rem;
   padding: 0, 5rem;
+  transform: rotate (360deg);
 }
 
 .estudio__info {
@@ -197,3 +198,37 @@ span:hover {
   color: #3a3a3a;
 }
  */
+
+.img {
+  background-image: linear-gradient(top, grey, rgb(255, 255, 255));
+}
+
+.spanMaster {
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  color: #3a3a3a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  letter-spacing: 5px;
+  z-index: 5;
+
+  animation-name: spanMasterEffect;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes spanMasterEffect {
+  from {
+    top: 50%;
+    opacity: 1;
+  }
+
+  to {
+    top: 35%;
+    opacity: 0;
+  }
+}
