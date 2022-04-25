@@ -51,7 +51,8 @@ header {
 }
 
 .header__logo {
-  width: auto;
+  width: 130px;
+  height: 130px;
 }
 .nav-link {
   text-decoration: none;
