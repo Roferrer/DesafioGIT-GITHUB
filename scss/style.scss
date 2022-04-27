@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
+$title_font: "Raleway", sans-serif;
+
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: $title_font;
   font-size: 1rem;
   font-weight: 600;
   font-style: normal;
@@ -35,6 +37,7 @@ ul {
     grid-template-columns: auto auto;
     justify-content: space-between;
   } */
+
 .header-index {
   max-width: 1320px;
 }
@@ -53,7 +56,6 @@ header {
   width: 130px;
   height: 130px;
 }
-
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
@@ -65,6 +67,7 @@ header {
 
 .nav ul li {
   display: inline-block;
+
   margin-left: 2rem;
 }
 
@@ -150,12 +153,11 @@ span:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .hero_img {
   width: 200px;
   margin: 2rem;
   padding: 0, 5rem;
-  transform: rotate 360deg;
+  transform: rotate (360deg);
 }
 
 .estudio__info {
@@ -186,19 +188,20 @@ span:hover {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
     font-family: "Raleway", sans-serif;
   }
-
+  
   .trabajo__titulo {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
   }
-
+  
   .trabajo__descripcion {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     color: #3a3a3a;
   }
    */
+
 .img {
   background-image: linear-gradient(top, grey, rgb(255, 255, 255));
 }
@@ -213,20 +216,20 @@ span:hover {
     font-size: 2rem;
     letter-spacing: 5px;
     z-index: 5;
-
+  
     animation-name: spanMasterEffect;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-duration: 3s;
     animation-timing-function: ease;
   }
-
+  
   @keyframes spanMasterEffect {
     from {
       top: 50%;
       opacity: 1;
     }
-
+  
     to {
       top: 35%;
       opacity: 0;
@@ -236,18 +239,16 @@ span:hover {
     animation-duration: 3s;
     animation-timing-function: ease;
   }
-
+  
   @keyframes spanMasterEffect {
     from {
       top: 50%;
       opacity: 1;
     }
-
+  
     to {
       top: 35%;
       opacity: 0;
     }
   }
    */
-
-/*# sourceMappingURL=style.css.map */
