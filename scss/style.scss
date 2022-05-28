@@ -184,28 +184,27 @@ span:hover {
 }
 
 .trabajos {
-    margin: 2rem;
-    max-width: 300px;
-    padding: 2rem;
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
-    font-family: "Raleway", sans-serif;
-  }
-  
-  /*  EXTEND */
-  .trabajo__titulo {
-    @extend .trabajos;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  
-  .trabajo__descripcion {
-    @extend .trabajos;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    color: #3a3a3a;
-  }
+  margin: 2rem;
+  max-width: 300px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  font-family: "Raleway", sans-serif;
+}
 
+/*  EXTEND */
+.trabajo__titulo {
+  @extend .trabajos;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.trabajo__descripcion {
+  @extend .trabajos;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
+}
 
 .img {
   background-image: linear-gradient(top, grey, rgb(255, 255, 255));
@@ -258,59 +257,53 @@ span:hover {
   }
    */
 
-  .estudio-titulo {
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-  }
-  .estudio-texto {
-    font-family: "Raleway", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .footer {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
-   /* MAPA */
-  $redes: ( 
-    linkeid: rgb(39, 39, 39)
-    facebook: rgb(39, 39, 39)
-    instagram: rgb(39, 39, 39)
-  )
+.estudio-titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.estudio-texto {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
 
-  @each $red, $color in $redes {
-    .btn--#{$redes} {
-    }
+.footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+/* MAPA */
+$redes: (
+      linkeid: rgb(39, 39, 39) facebook: rgb(39, 39, 39) instagram:
+        rgb(39, 39, 39),
+    )
+    @each $red,
+  $color in $redes {
+  .btn--#{$redes} {
   }
+}
 
-  /* MIXINS */
-  @mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
-  }
+/* MIXINS */
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
 
-  .trabajos {
-    @include sizes (300px, 400px);
-  }
-  
-
-    
-  }
-  
+.trabajos {
+  @include sizes(300px, 400px);
+}
