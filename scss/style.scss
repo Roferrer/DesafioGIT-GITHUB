@@ -1,3 +1,5 @@
+@import "./componentes/header";
+
 * {
   margin: 0;
   padding: 0;
@@ -26,10 +28,6 @@ svg {
   vertical-align: middle;
 }
 
-ul {
-  list-style: none;
-}
-
 /* .container {
     width: 80%;
     margin: 0 auto;
@@ -39,55 +37,6 @@ ul {
     grid-template-columns: auto auto;
     justify-content: space-between;
   } */
-
-.header-index {
-  max-width: 1320px;
-}
-
-header {
-  background-color: white;
-  border-bottom: 0, 5px solid black;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  border-bottom: 1px solid #3a3a3a;
-}
-
-.header__logo {
-  width: 130px;
-  height: 130px;
-}
-.nav-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  font-size: 0.8rem;
-  font-weight: 900;
-  font-family: "Raleway", sans-serif;
-}
-
-.nav ul li {
-  display: inline-block;
-
-  margin-left: 2rem;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  opacity: 0.65;
-}
-
-span {
-  /* TRANSICION */
-  height: auto;
-  transition: height 2s;
-}
-
-span:hover {
-  height: 200px;
-  opacity: 0.65;
-}
 
 .intro-section {
   grid-template-columns: auto auto;
@@ -307,3 +256,5 @@ $redes: (
 .trabajos {
   @include sizes(300px, 400px);
 }
+
+dd
