@@ -1,12 +1,6 @@
 @import "./componentes/header";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @import "custom";
+@import "./base/reset";
 
 $title_font: "Raleway", sans-serif;
 
@@ -27,16 +21,6 @@ svg {
   /* centro de ellas mismas */
   vertical-align: middle;
 }
-
-/* .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    max-width: 1320px;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-  } */
 
 .intro-section {
   grid-template-columns: auto auto;
@@ -88,7 +72,7 @@ svg {
 
 .col {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 400;
   color: grey;
 }
@@ -97,6 +81,10 @@ svg {
   background-color: white;
   color: black;
   padding: 4rem;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .hero {
@@ -159,53 +147,6 @@ svg {
   background-image: linear-gradient(top, grey, rgb(255, 255, 255));
 }
 
-/*   .spanMaster {
-    font-family: "Raleway", sans-serif;
-    position: absolute;
-    color: #3a3a3a;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    letter-spacing: 5px;
-    z-index: 5;
-  
-    animation-name: spanMasterEffect;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-  }
-  
-  @keyframes spanMasterEffect {
-    from {
-      top: 50%;
-      opacity: 1;
-    }
-  
-    to {
-      top: 35%;
-      opacity: 0;
-    }
-  }
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-  }
-  
-  @keyframes spanMasterEffect {
-    from {
-      top: 50%;
-      opacity: 1;
-    }
-  
-    to {
-      top: 35%;
-      opacity: 0;
-    }
-  }
-   */
-
 .estudio-titulo {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -230,12 +171,9 @@ svg {
 .footer {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
 }
+
 /* MAPA */
 $redes: (
       linkeid: rgb(39, 39, 39) facebook: rgb(39, 39, 39) instagram:
@@ -256,5 +194,3 @@ $redes: (
 .trabajos {
   @include sizes(300px, 400px);
 }
-
-dd
